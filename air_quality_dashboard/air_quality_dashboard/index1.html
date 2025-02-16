@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h2 class="text-center">Login</h2>
+        <form id="loginForm">
+            <div class="form-group">
+                <label for="emailOrPhone">Email or Phone:</label>
+                <input type="text" class="form-control" id="emailOrPhone" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" class="form-control" id="password" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Login</button>
+        </form>
+    </div>
+
+    <!-- Place your JavaScript code here -->
+    <script>
+        const loginForm = document.getElementById('loginForm');
+
+        loginForm.addEventListener('submit', (event) => {
+            event.preventDefault();
+
+            // Get form values
+            const emailOrPhone = document.getElementById('emailOrPhone').value;
+            const password = document.getElementById('password').value;
+
+            // Log values for debugging
+            console.log('Email or Phone:', emailOrPhone);
+            console.log('Password:', password);
+
+            // Here, you would typically send an AJAX request to your server to validate credentials
+            // and perform the login process. For now, let's simulate a successful login:
+
+            if (emailOrPhone === 'divyanshk337@gmail.com' && password === '1234') {
+                // Set authentication flag
+                sessionStorage.setItem('isAuthenticated', 'true');
+
+                // Redirect to the dashboard or another protected page
+                window.location.href = 'index.html';
+            } else {
+                // Display an error message (you can customize this)
+                alert('Invalid email/phone or password.');
+            }
+        });
+    </script>
+</body>
+</html>

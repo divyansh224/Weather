@@ -1,0 +1,100 @@
+ /*body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+.login-container {
+    width: 80%;
+    max-width: 400px;
+    margin: 0 auto;
+    
+}*/
+
+@media (max-width: 768px) {
+    .login-container {
+        width: 90%;
+    }
+}
+
+.login-container {
+    width: 420px;
+    background: transparent;
+    margin: 0 auto;
+    padding: 20px;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(20px);
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.login-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.login-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-container label {
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+.login-container input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: #110404;
+}
+
+.login-container button {
+    padding: 10px 20px;
+    background-color: #0a7efb;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-container p {
+    text-align: center;
+    margin-top: 10px;
+    color: rgb(251, 247, 249);
+}
+
+.login-container a {
+    color: #0970f6;
+    text-decoration: none;
+} 
+ body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-image: url('name.jpeg'); /* Replace 'your_image.jpg' with your image path */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.login-container {
+  /* Your login form styles here */
+  width: 420px;
+  margin: 0 auto;
+  border: 2px solid rgba(255, 255, 255, .2);
+  backdrop-filter: blur;
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  align-self: center;
+  background-color: rgba(14, 8, 8, 0.8);
+  background: transparent; /* Semi-transparent white overlay */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
